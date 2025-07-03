@@ -270,4 +270,7 @@ progress::-webkit-progress-value {
   font-size: 3.2rem;
  }
  /* SKILLS PAGE */
+ .skill_track{
+  width: 22rem;
+ }
 }
