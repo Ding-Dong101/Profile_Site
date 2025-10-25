@@ -5,43 +5,168 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Erastus</title>
     <link rel="shortcut icon" href="./assets/new-nuke-icon.ico" type="image/x-icon" />
-    <link rel="stylesheet" href="./CSS/home.css" />
+    <link rel="stylesheet" href="./CSS/style.css" />
   </head>
   <body>
+    <nav>
+      <h3 class="name">Erastus</h3>
+      <ul class="nav_links hidden">
+        <li class="nav-links-item"><a href="/"> home</a></li>
+        <li class="nav-links-item"><a href="./aboutme.html">about</a></li>
+        <li class="nav-links-item"><a href="./skills.html">skills</a></li>
+        <li class="nav-links-item"><a href="./projects.html">projects</a></li>
+      </ul>
+      <h3 class="stack">links</h3>
+    </nav>
+    <!-- --------------------- INTRODUCTION -------------- -->
     <header>
-      <nav>
-        <h3 class="name">Erastus</h3>
-        <ul class="nav_links hidden">
-          <li class="nav-links-item"><a href="/"> home</a></li>
-          <li class="nav-links-item"><a href="./aboutme.html"> about<a></li>
-          <li class="nav-links-item"><a href="./skills.html">skills</a></li>
-          <li class="nav-links-item"><a href="./projects.html">projects</a></li>
-          <!-- <li class="nav-links-item">contact</li> -->
-        </ul>
-        <h3 class="stack">links</h3> 
-      </nav>
-
-       <section>
-        <div class="hero-section">
-            <!-- BOX ONE -->
-          <div class="hero-box-one">
-            <h6 class="hero-greeting">hello</h6>
-            <h2 class="hero-title">i'm erastus kwaw</h2>
-            <p class="hero-context">
-              full-stack developer with a passion for creating dynamic and responsive web applications. I specialize in
-              both front-end and back-end development, ensuring seamless user experiences and robust functionality.
-            </p>
-            <div class="button-box">
-              <button class="hero-button fill">hire me</button>
-              <button class="hero-button">Get in Touch</button>
-            </div>
-          </div>
-          <!-- BOX TWO -->
-          <div class="hero-box-two">
-            <img src="./assets/profile.svg" alt="picture of erastus" class="hero-image" width="300"/>
+      <div class="hero-section">
+        <!-- BOX ONE -->
+        <div class="hero-box-one">
+          <h6 class="hero-greeting">hello</h6>
+          <h2 class="hero-title">i'm erastus kwaw</h2>
+          <p class="hero-context">
+            full-stack developer with a passion for creating dynamic and responsive web applications. I specialize in
+            both front-end and back-end development, ensuring seamless user experiences and robust functionality.
+          </p>
+          <div class="button-box">
+            <button class="hero-button fill">hire me</button>
+            <button class="hero-button">Get in Touch</button>
           </div>
         </div>
-        </section>
+        <!-- BOX TWO -->
+        <div class="hero-box-two">
+          <img src="./assets/profile.svg" alt="picture of erastus" class="hero-image" width="300" />
+        </div>
+      </div>
     </header>
+
+    <!-- ------------------ ABOUT AND INFO ------------------------->
+    <section class="aboutme">
+      <h2 class="about_me">about me</h2>
+      <div class="divisions">
+        <div class="one">
+          <p class="bold">Name</p>
+          <p class="bold">Date of Birth</p>
+          <p class="bold">Address</p>
+
+          <p class="bold">Email</p>
+          <p class="bold">Phone</p>
+        </div>
+        <div class="two">
+          <p>Erastus Uriah Nyarku kwaw</p>
+          <p>February 11, 2005</p>
+          <p>Takoradi, Ghana</p>
+
+          <p>syndicate4778@outlook.com</p>
+          <p>+233 59 891 8102</p>
+        </div>
+      </div>
+      <div class="extra">
+        <a href="./assets/resume update.pdf" target="_blank" rel="noopener noreferrer">
+          Download CV
+          <img
+            width="32"
+            height="32"
+            src="https://img.icons8.com/material-two-tone/24/download--v1.png"
+            class="icon"
+            alt="download--v1"
+          />
+        </a>
+      </div>
+    </section>
+
+    <!-- ---------SKILLS ------------- -->
+    <section class="skills">
+      <h2>My Skills</h2>
+
+      <div class="skill-section">
+        <div class="one">
+          <div class="skill_track">
+            <div class="heading">
+              <h3>HTML</h3>
+              <p class="skill_description">90</p>
+            </div>
+            <progress id="htmlProgress" max="100" value="90" class="slider"></progress>
+          </div>
+
+          <div class="skill_track">
+            <div class="heading">
+              <h3>React</h3>
+              <p class="skill_description">60</p>
+            </div>
+            <progress id="reactProgress" max="100" value="60" class="slider"></progress>
+          </div>
+
+          <div class="skill_track">
+            <div class="heading">
+              <h3>C++</h3>
+              <p class="skill_description">70</p>
+            </div>
+            <progress id="cppProgress" max="100" value="70" class="slider"></progress>
+          </div>
+
+          <div class="skill_track">
+            <div class="heading">
+              <h3>Cisco Networking</h3>
+              <p class="skill_description">30</p>
+            </div>
+            <progress id="ciscoProgress" max="100" value="30" class="slider"></progress>
+          </div>
+        </div>
+
+        <div class="two">
+          <div class="skill_track">
+            <div class="heading">
+              <h3>CSS</h3>
+              <p class="skill_description">70</p>
+            </div>
+            <progress id="cssProgress" max="100" value="70" class="slider"></progress>
+          </div>
+
+          <div class="skill_track">
+            <div class="heading">
+              <h3>JavaScript</h3>
+              <p class="skill_description">80</p>
+            </div>
+            <progress id="jsProgress" max="100" value="80" class="slider"></progress>
+          </div>
+
+          <div class="skill_track">
+            <div class="heading">
+              <h3>Python</h3>
+              <p class="skill_description">70</p>
+            </div>
+            <progress id="pythonProgress" max="100" value="70" class="slider"></progress>
+          </div>
+
+          <div class="skill_track">
+            <div class="heading">
+              <h3>Reverse Engineering</h3>
+              <p class="skill_description">10</p>
+            </div>
+            <progress id="reverseProgress" max="100" value="10" class="slider"></progress>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!------ PROJECTS -------- -->
+
+    <section class="projects">
+      <div class="project_box">
+        <img src="./resourses/far_away.png" alt="project_image" class="project_image" />
+        <div class="project_description">
+          <h3 class="project_title">Far Away</h3>
+          <p class="project_details">
+            This site is a sleek, travel-themed web app built with React and Vercel, offering an immersive navigation
+            experience. It features a commands for adding, removing, and organizing items needed for travel.
+          </p>
+        </div>
+        <button class="project_button">
+          <a href="https://travel-application-beryl.vercel.app/" target="_blank"> Click to view application </a>
+        </button>
+      </div>
+    </section>
   </body>
 </html>
